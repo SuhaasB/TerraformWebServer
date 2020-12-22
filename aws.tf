@@ -131,7 +131,6 @@ resource "aws_eip" "pEIP" {
   depends_on                = [aws_internet_gateway.pGW]
 }
 
-
 output "public_ip" {
   value = aws_eip.pEIP.public_ip
 }
